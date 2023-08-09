@@ -1,0 +1,24 @@
+public class practice{
+
+    public static void main(String[] args) {
+        int count = 0;
+        for (int i=2; i <=50; i++){
+            if(isPrime(i)){
+                System.out.println("Number " + i + " is Prime Number.");
+                count++;
+            }
+        }
+
+    }
+    public static boolean isPrime(int wholenumber){
+        if(wholenumber <2){
+            return false;
+        }
+        for(int divisor = 2; divisor <= wholenumber/2 ; divisor++){
+            if (wholenumber % divisor == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+}
