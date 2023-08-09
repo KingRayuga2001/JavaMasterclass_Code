@@ -1,0 +1,19 @@
+public class practice {
+
+    public static void main(String[] args) {
+        int countofmatchs = 0;
+        int sumofmatchs = 0;
+
+        for (int loopnumber= 1; loopnumber<=1000; loopnumber++){
+            if (loopnumber %3==0 && loopnumber %5 ==0){
+                countofmatchs++;
+                sumofmatchs += loopnumber;
+                System.out.println("The match is " + loopnumber);
+            }
+            if(countofmatchs == 10){
+                break;
+            }
+        }
+        System.out.println("The sum of loopnumbers is = " + sumofmatchs);
+    }
+}
