@@ -1,0 +1,27 @@
+public class practice {
+
+    public static void main(String[] args) {
+        int i = 4;
+        int count = 0;
+        int odd= 0;
+        while(i<=20){
+            i++;
+            if(isEvenNumber(i)){
+                count++;
+
+                System.out.println("The even numbers are " + i);
+            }
+            if(i%2!=0){
+                odd++;
+            }
+        }
+        System.out.println("The count of even numbers is " + count);
+        System.out.println("the count of odd number is " + odd);
+    }
+    public static boolean isEvenNumber(int num){
+        if(num%2==0){
+            return true;
+        }
+        return false;
+    }
+}
